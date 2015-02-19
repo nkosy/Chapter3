@@ -1,4 +1,4 @@
-package com.nkosy.hashset;
+package com.nkosy.hashset.service;
 
 import java.util.HashSet;
 import java.util.Set;

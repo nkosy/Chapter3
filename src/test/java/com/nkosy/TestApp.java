@@ -1,7 +1,7 @@
 package com.nkosy;
 
-import com.nkosy.hashset.Impl.StationaryListImpl;
-import com.nkosy.hashset.StationaryList;
+import com.nkosy.hashset.service.Impl.StationaryListImpl;
+import com.nkosy.hashset.service.StationaryList;
 import com.nkosy.list.service.Impl.ShoppingListImpl;
 import com.nkosy.list.service.ShoppingList;
 import junit.framework.Assert;

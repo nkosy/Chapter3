@@ -1,6 +1,6 @@
-package com.nkosy.hashset.Impl;
+package com.nkosy.hashset.service.Impl;
 
-import com.nkosy.hashset.StationaryList;
+import com.nkosy.hashset.service.StationaryList;
 
 /**
  * Created by nkosy on 2015/02/19.
