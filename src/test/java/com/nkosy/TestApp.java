@@ -37,6 +37,7 @@ public class TestApp {
         //Map
         vihicles = new CarListImpl();
         vihicles.add("123", "BMW");
+        vihicles.add("000", "Volvo");
 
     }
 
@@ -54,11 +55,9 @@ public class TestApp {
     }
     
     //Map
-
-
     @Test
     public void testCars() throws Exception {
-        Assert.assertEquals("{regNo=car}", vihicles.view());
+        Assert.assertEquals("{000=Volvo, 123=BMW}", vihicles.view());
     }
 
     @After
