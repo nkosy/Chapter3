@@ -1,5 +1,7 @@
 package com.nkosy.config;
 
+import com.nkosy.hashmap.service.CarList;
+import com.nkosy.hashmap.service.Impl.CarListImpl;
 import com.nkosy.hashset.service.Impl.StationaryListImpl;
 import com.nkosy.hashset.service.StationaryList;
 import com.nkosy.list.service.Impl.ShoppingListImpl;
@@ -20,5 +22,10 @@ public class AppConfig {
     @Bean(name="stlist")
     public StationaryList getStService(){
         return new StationaryListImpl();
+    }
+
+    @Bean(name="carlist")
+    public CarList getCrService(){
+        return new CarListImpl();
     }
 }

@@ -1,5 +1,7 @@
 package com.nkosy;
 
+import com.nkosy.hashmap.service.CarList;
+import com.nkosy.hashmap.service.Impl.CarListImpl;
 import com.nkosy.hashset.service.Impl.StationaryListImpl;
 import com.nkosy.hashset.service.StationaryList;
 import com.nkosy.list.service.Impl.ShoppingListImpl;
@@ -17,10 +19,13 @@ public class TestApp {
     ShoppingList list;
     //Set
     StationaryList mylist;
+    //Map
+    CarList vihicles;
     @Before
     public void setUp() throws Exception {
         //List
         list = new ShoppingListImpl();
+        list.thelist.clear();
         list.add("peanuts");
 
         //Set
@@ -28,6 +33,11 @@ public class TestApp {
         mylist.add("pen");
         mylist.add("book");
         mylist.add("ruler");
+
+        //Map
+        vihicles = new CarListImpl();
+        vihicles.add("123", "BMW");
+
     }
 
     //List
@@ -41,6 +51,14 @@ public class TestApp {
     public void testSet() throws Exception {
         Assert.assertEquals("[book, pen, ruler]", mylist.view());
 
+    }
+    
+    //Map
+
+
+    @Test
+    public void testCars() throws Exception {
+        Assert.assertEquals("{regNo=car}", vihicles.view());
     }
 
     @After
